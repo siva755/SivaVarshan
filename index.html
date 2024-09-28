@@ -1,39 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookSky</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    </head>
-<body>
-    <div class="navbar">
-        <h1>BookSky</h1>
-    </div>
-
-    <div class="container">
-    <div class="book-container">
-        <h2>Rich Dad Poor Dad</h2>
-        <h5>Robert Kiyosaki</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sequi mollitia vero consequuntur architecto commodi magnam voluptas dicta, nostrum nesciunt eaque, maxime placeat odio in quaerat inventore, eos consectetur cum.</p>
-        <button onclick="deletebook(event)">Delete</button>
-    </div>
-
-    <div class="popup-overlay"></div>
-    <div class="popup-box">
-        <h2>Add a Book</h2>
-        <form>
-            <input type="text" placeholder="Book Title" id="book-title-input">
-            <input type="text" placeholder="Book Author" id="book-author-input">
-            <textarea placeholder="Short Description" id="book-description-input"></textarea>
-            <button id="add-book">ADD</button>
-            <button id="cancel-popup">CANCEL</button>
-        </form>
-    </div>
-    <button class="add-button" id="add-popup-button">+</button>
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
