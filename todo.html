@@ -1,0 +1,102 @@
+<h1>Welcome!!</h1>
+<div>
+<h2>TODOLIST</h2>
+</div>
+<div>
+<center>
+    <img src=C:\Users\sivav\OneDrive\Desktop\Productivity-Tools-That-Will-Make-Your-Life-Much-Easier.webp alt="Stay Productive" width="400" height="200">
+</center>
+</div>
+<div>
+<input id="input">
+<button onclick="add()">Add</button>
+<ul id="list-container">
+    <li>Start Journalling
+        <button onclick="deleteItem(event)">Delete</button>
+    </li>
+</ul>
+</div>
+<script>
+    var ul = document.getElementById("list-container")
+    var input = document.getElementById("input")
+    function add()
+    {
+        var listitem = document.createElement("li")
+        listitem.innerHTML = input.value + "<button onclick='deleteItem(event)''>Delete</button"
+        ul.append(listitem)
+    }
+    function deleteItem(event)
+    {
+        event.target.parentElement.remove()
+    }
+</script>
+<style>
+    ul{
+        color:yellow;
+        height: 1000px;
+        width: 205px ;
+        display: inline;
+        margin: 10px;
+        font-size: xx-large;
+    }
+    input{
+        color: brown;
+        font-size: x-large;
+        height: 105px;
+        width: 500px;
+        padding: 20px;
+        top: 0px;
+        left: 0px;
+        margin-left: 100px;
+        border-radius: 10px;
+        
+    };
+    li{
+        background-color:white;
+        color:yellow;
+        height: 100px;
+        top: 0px;
+        left: 0px;
+        padding: 50px;
+        font-size:xx-large;
+        padding-bottom: 50px;
+        margin-top: 60px;
+        border: 80px;
+        height: 300px;
+        width: 200px;
+        margin-left: 100px;
+        
+    }
+    body{
+        background-color: black;
+        top: 0px;
+        left: 0px;
+        padding: 40px;
+        margin-top: 20px;
+        margin: 100px;
+        border: 20px;
+    }
+    *{
+        text-align: center;
+        margin: 10px;
+        opacity: 2;
+    }
+    button{
+        background-color:red;
+        height: 25px;
+        width: 50px;
+        display: inline;
+        top: 0px;
+        text-align:left;
+        max-width: fit-content;
+    }
+    h1{
+        display: inline;
+        color: white;
+        height: 100px;
+    }
+    h2{
+    display: inline;
+    color: white;
+    }
+</style>
